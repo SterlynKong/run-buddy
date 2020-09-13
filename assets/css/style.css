@@ -195,6 +195,25 @@ section {
 
 .step-info {
    flex: 2 70%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+
+.step-img {
+   flex: 1 12%;
+   margin-right: 20px;
+}
+
+
+.step-img img {
+   max-width: 100%;
+}
+
+
+.step-text {
+   flex: 12;
 }
 
 
@@ -374,7 +393,30 @@ footer a {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-
+   header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
  }
  
  /* MEDIA QUERY FOR TABLETS AND SMALLER */
